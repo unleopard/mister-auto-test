@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\OccurrenceController::class,'index']);
-Route::get('/{param}', [\App\Http\Controllers\OccurrenceController::class,'index'])->name('home-page');
+Route::get('/', [\App\Http\Controllers\OccurrenceController::class,'listTentatives'])->name('home-page');
+Route::get('/{param}', [\App\Http\Controllers\OccurrenceController::class,'index'])->name('list-tentatives');
 
 
