@@ -13,12 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    dd('first route');
-});
+Route::get('/', [\App\Http\Controllers\OccurrenceController::class,'index']);
+Route::get('/{param}', [\App\Http\Controllers\OccurrenceController::class,'index'])->name('home-page');
 
 
-
-Route::get('/', function () {
-    return view('welcome');
-});
