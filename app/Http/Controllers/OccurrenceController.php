@@ -35,7 +35,7 @@ class OccurrenceController extends Controller
 
     public function listTentatives()
     {
-        $listTentatives = Occurrence::orderBy('id', 'desc')->paginate(2);
+        $listTentatives = Occurrence::orderBy('id', 'desc')->paginate(5);
         return view('tentatives', ['listTentatives' => $listTentatives]);
     }
 

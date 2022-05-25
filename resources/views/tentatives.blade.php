@@ -16,6 +16,31 @@
             margin-bottom: 2em;
             background-color: #f2f2f2;
         }
+
+
+        .flex {
+            display: flex !important;
+        }
+        .items-center {
+            align-items: center !important;
+        }
+        .justify-between {
+            justify-content: space-between;
+        }
+
+
+        .hidden {
+            display: flex;
+            align-items: center;
+        }
+        .hidden div p.leading-5 {
+            margin: initial;
+            margin-right: 1em;
+        }
+
+        .hidden div svg {
+            width: 25px;
+        }
     </style>
 </head>
 <body>
