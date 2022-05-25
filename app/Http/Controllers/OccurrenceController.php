@@ -21,7 +21,7 @@ class OccurrenceController extends Controller
                 $inserted = $this->saveData($param, $maxChars[0], $maxChars[1]);
 
                 if ($inserted)
-                    return response()->json(['success' => true, 'status' => 200, 'date' => time(), 'string' => $param, 'message' => 'parametre must be numeric', 'detail' => ['char' => $maxChars[0], 'max' => $maxChars[1]]]);
+                    return response()->json(['success' => true, 'status' => 200, 'date' => time(), 'string' => $param, 'message' => 'Resultat', 'detail' => ['char' => $maxChars[0], 'max' => $maxChars[1]]]);
                 else
                     return response()->json(['success' => false, 'status' => 500, 'date' => time(), 'message' => "Une erreur se produite lors de l'insertion"], 500);
 
